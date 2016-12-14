@@ -11,7 +11,7 @@ import bean.Situazione;
 
 public class Dao {
 	
-	public List<Situazione> getSituazioni(){     //nodi grafo
+	public List<Situazione> getSituazioni(){               //nodi grafo
 		Connection conn = DBConnect.getConnection();
 		String query = "select * from situazione where Localita = 'Torino' and data >= '2013/01/01' and data <= '2013/12/31' order by data ASC;";
 		try{
